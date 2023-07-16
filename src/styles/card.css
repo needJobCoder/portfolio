@@ -1,0 +1,124 @@
+.card-container_card-text_backgroundImage {
+    background-size: cover;
+    background-position: center center; 
+    width: 100%;
+    transition: 2s;
+
+  }
+  .card-container_card-text_backgroundImage:hover
+  {
+    animation : fade 2s infinite;
+    opacity: 0.8;
+  }
+
+
+
+  .card-container_card-text_backgroundImage-titleAndDescriptionContainer {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+  }
+  
+  .card-container_card-text_title {
+    font-size: 3vw;
+    transition: all 1s;
+    opacity: 1;  
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .card-container_card-text_title_description {
+    color: black;
+    transition: all 1s;
+    opacity: 1;    
+    cursor: pointer;      
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    animation: jump 5s infinite;
+    width: 30vw;
+    text-align: justify;
+  }
+
+  
+
+  
+  .card-container_card-text_title {
+    text-align: center;
+    width: 50%;
+    animation: jump 5s infinite;
+    color: black;
+  }
+  
+  @keyframes jump {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .card-container_card-text_backgroundImage
+  {
+    width: 100%;
+
+  }
+  
+  @media only screen and (max-width: 500px) and (min-width : 0px) {
+    .card-container_card-text_title
+    {
+        font-size: 6vw;
+        
+    }
+
+    .card-container_card-text_backgroundImage-titleAndDescriptionContainer
+    {
+        top: 30%;
+        left: 25%;
+    }
+
+    .card-container_card-text_title_description
+    {
+        margin-top: 10px;
+        font-size: 3vw;
+        width: 60%;
+        height: 40vh;
+       
+    }
+
+    .card-container_card-text_backgroundImage
+    {
+        height: 100vh;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) and (min-width : 500px) {
+    .card-container_card-text_title
+    {
+        font-size: 3vw;
+        
+    }
+
+    .card-container_card-text_backgroundImage-titleAndDescriptionContainer
+    {
+       
+        top: 20%;
+        left: 30%;
+    }
+
+    .card-container_card-text_title_description
+    {
+        margin-top: 10px;
+        font-size: 2vw;
+        width: 60%;
+        height: 40vh;
+       
+    }
+
+    .card-container_card-text_backgroundImage
+    {
+        height: 100vh;
+    }
+  }

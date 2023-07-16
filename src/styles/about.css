@@ -1,0 +1,56 @@
+.About
+{
+}
+
+
+
+.About_imageContainer_heading
+{
+    color: rebeccapurple;
+    font-size: 3vw;
+    text-align: center;
+    animation: jump 3s infinite;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.About_imageContainer
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 30px;
+}
+
+.About_imageContainer_image {
+    border-radius: 7%;
+    border: 3px solid #ccc;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .About_imageContainer_image:hover {
+    border-color: rgb(156, 178, 96);
+  }
+  
+
+  @media only screen and (max-width: 500px) and (min-width : 0px) {
+
+    .About_imageContainer
+    {
+        width: 80%;
+    }
+    .About_imageContainer_heading
+    {
+        font-size: 5vw;
+    }
+
+    .About_imageContainer_image
+    {
+        
+        width: 100%;
+        height: 50vh;
+    }
+  }

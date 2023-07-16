@@ -1,0 +1,118 @@
+html{
+  font-size: 1vw;
+}
+
+:root {
+  --navbar-bg-color: rgb(12, 104, 43);
+  --navbar-link-color: #f2e0e0e8;
+  --navbar-link-hover-color: rgb(214, 214, 124);
+  --navbar-active-link-bg-color: #c97979;
+  --navbar-active-link-hover-color: #ad6666;
+  
+}
+
+.NavbarContainer
+{
+  width: 100%;
+}
+
+.NavbarContainer_navbar
+{
+  width: 100%;
+  border: solid black 2px;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--navbar-bg-color);
+
+}
+
+
+
+.NavbarContainer_navbar-nav
+{
+  display: flex;
+  flex-direction: row;
+}
+
+.NavbarContainer_navbar
+{
+  transition: all 0.5s;
+}
+
+
+.NavbarContainer_navbar:hover
+{
+  border-bottom: 7px solid white;
+}
+
+.NavbarContainer_navbar-nav_nav-item
+{
+  margin-left: 10px;
+  text-decoration: none;
+  list-style: none;
+  color: var(--navbar-link-color);
+}
+.NavbarContainer_card-image
+{
+  width: 5%;
+  margin-left: auto;
+  margin-right: 40px;
+ transition: all 1s;
+}
+.NavbarContainer_card-image
+{ 
+  animation: flipImage 2s infinite;
+ 
+}
+
+@keyframes flipImage
+{
+  0%
+  {
+    transform: scaleX(1);
+  }
+
+  50%
+  {
+    transform: scaleX(-1);
+  }
+
+  100%
+  {
+    transform: scale(1);
+  }
+}
+
+.NavbarContainer_navbar-nav_nav-item_nav-link
+{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2vw;
+  color: white;
+  transition:  all 0.5s ease-in-out;
+  text-decoration: none; 
+   
+}
+
+.NavbarContainer_navbar-nav_nav-item_nav-link:hover
+{
+  font-size: 2.1vw;
+  color: black;
+  
+}
+
+@media only screen and (max-width: 500px) and (min-width : 0px) {
+  .NavbarContainer_card-image
+  {
+    width: 6vw;
+  }
+
+  .NavbarContainer_navbar-nav_nav-item_nav-link
+  {
+    font-size: 3vw;
+  }
+}
+
+
+@media only screen and (max-width: 800px) and (min-width : 550px) {
+
+}
